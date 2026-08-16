@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task Management Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Task Management Application</h1>
+    <p> Manage, organize and track your tasks efficiently</p>
+    <h2 id="loginHeading"> Login </h2>
+    <form id="loginForm" autocomplete="off">
+        <label> Email </label>
+        <input id="loginEmail" type="email" placeholder="Enter your Email" autocomplete="off">
+        <label> Password</label>
+        <input id="loginPassword" type="Password" placeholder="Enter your Password" autocomplete="new-password">
+        <button type="Submit"> Login </button>    
+    </form>
+
+    <h2 id="registerHeading"> Register </h2>
+    <form id="registerForm" autocomplete="off">
+        <label>Name</label>
+        <input id="registerName" type="text" placeholder="Enter your name" autocomplete="off">
+        <label>Email</label>
+        <input id="registerEmail" type="email" placeholder="Enter your Email" autocomplete="off">
+        <label>Password</label>
+        <input id="registerPassword" type="password" placeholder="Enter your password" autocomplete="new-password">
+        <button type="Submit">Create Account</button>
+    </form>
+
+    <h2>Task Dashboard</h2>
+    
+    <h3>Create New Task</h3>
+    <form id="taskForm">
+    <label>Task Title</label>
+    <input id="taskTitle" type="text" placeholder="Enter your title">
+    <label>Description</label>
+    <textarea id="taskDescription" placeholder="Enter Task Description"></textarea>
+    <label>Due Date</label>
+    <input id="taskDueDate" type="date">
+    <label>Priority</label>
+    <select id="taskPriority">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+    </select>
+    <label>Status</label>
+    <select id="taskStatus">
+        <option>Pending</option>
+        <option>In Progress</option>
+        <option>Completed</option>
+    </select>
+    <button type="submit">Create Task</button>
+    </form>
+
+    <h3>My Tasks</h3>
+    <div id="taskList">
+    
+    </div>
+    <br><br>
+    <button id="logoutBtn" type="button"> Logout </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
